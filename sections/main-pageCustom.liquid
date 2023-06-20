@@ -1,0 +1,1316 @@
+{% comment %} {% unless section.settings.full_width %}<div class="article">{% endunless %}
+  <div class="container" data-cc-animate>
+    <div class="page-header cf">
+      <h1 class="majortitle">{{ page.title }}</h1>
+    </div>
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+{% unless section.settings.full_width %}</div>{% endunless %} {% endcomment %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!--   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+<script>
+    // function closeModal() {
+    //   var videoPlayer = document.getElementById('videoPlayer');
+    //   videoPlayer.src = ''; // Set the iframe's source URL to an empty value
+    // };
+    
+    var videoPlayer = document.getElementById('videoPlayer');
+    // Pause the video when the modal is closed
+    $('#myModal').on('hidden.bs.modal', function () {
+      videoPlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+
+</script>
+
+{% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'Video_banner'  %}
+            <div class="container{% if block.settings.fullwidth_video %}-fluid{% endif %}">
+            </div>
+        {% when 'One_image' %}
+            <div class="container{% if block.settings.fullwidth_One %}-fluid{% endif %} ">
+              <div class="{% unless block.settings.oneimgbanner %}bgcolorOne{% endunless %}" style="background-color:{{ block.settings.colorbgone }}" >
+                {% if block.settings.oneimgbanner %}                 
+                     <a href="{{ block.settings.imageurlOne }}">
+                        <img src="{{ block.settings.oneimgbanner | img_url: 'master' }}" {%  if block.settings.oneimgbanner   %} style="width: 100%;object-fit: contain;" {%   endif %} />
+                     </a>
+                     <span>{{ block.settings.desc1 }}</span>               
+                {% endif %}
+              </div>
+              {% if block.settings.showhdrtxt %}
+                  <div class="hdrcaption" >
+                      <div class="container">                         
+                              <div class="hdrcaptionpos">
+                                <div class="hdr">{{ block.settings.onehdr }}</div>
+                                <div class="det">{{ block.settings.onesubhdr }}</div>
+                              </div>    
+                      </div>
+                  </div>
+              {% endif %}
+
+              {% if block.settings.showcntrtxt %}
+                  <div class="center-rel">
+                  <div class="hdrcaptioncntr" > 
+                      <div class="" >     
+                              <div class="hdrcaptioncenter">
+                                <div class="detcntrbox">
+                                  <div class="detcntr">{{ block.settings.onecntr }}</div><br/>
+                                </div>
+                                <div class="detathor"> —{{ block.settings.onecntrauthor }}</div>
+                                <div class="detdesig">{{ block.settings.onecntrdesig }}</div>
+                              </div>
+                      </div>
+                  </div>
+                  </div>
+              {% endif %}       
+
+              {% if block.settings.showlefttxt %}
+                <div class="center-rel">
+                  <div class="hdrcaptionlft" >
+                      <div class="container">                         
+                              <div class="hdrcaptionleft">
+                                <div class="detleft">{{ block.settings.detlefttxt }}</div>
+                                <div class="hdrleft">{{ block.settings.hdrlefttxt }}</div>                               
+                                <div class="btnleft">{{ block.settings.btnlefttxt }}</div>
+                              </div>
+                              <a href="#myModal" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/NFWSFbqL0A0" data-target="#myModal">
+                              <div class="btnvideo" ><img src="https://cdn.shopify.com/s/files/1/0765/4545/8450/files/play2b.png?v=1686637379"></div>
+                              </a>   
+
+<!-- <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/s0RI4IXKE_o" data-target="#myModal">
+  Play Video 1 - autoplay
+</button> -->
+                      </div>
+                  </div>
+                </div>
+              {% endif %}
+              {% if block.settings.showrighttxt %}
+                <div class="center-rel">
+                  <div class="hdrcaptionrght" style="transform: translateY({{block.settings.translateypos}}%); left:{{block.settings.leftpos}}%; >
+                      <div class="container">                         
+                              <div class="hdrcaptionright">
+                                <div class="hdrright">{{ block.settings.hdrrighttxt }}</div>   
+                                <div class="detright">{{ block.settings.detrighttxt }}</div>    
+                                {% if block.settings.showrghtbtn %}
+                                  <div class="btntxtnbtn">{{ block.settings.btnrighttxt }} ›</div>
+                                {% endif %}
+                              </div>                     
+                      </div>
+                  </div>
+                </div>
+              {% endif %}  
+              {% if block.settings.showlfttxt %}
+                <div class="center-rel">
+                  <div class="hdrcaptionlftOnly" >
+                      <div class="container">                         
+                              <div class="hdrcaptionleftOnly">
+                                <div class="hdrleftonly">{{ block.settings.lfttxt }}</div>   
+                                <div class="detleftonly">{{ block.settings.detlfttxt }}</div>  
+                                {% if block.settings.hasbtnleftonly %}
+                                  <div class="btnleftonly">{{ block.settings.btnlfttxt }}</div>
+                                {% endif %}
+                              </div>                       
+                      </div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+        {% when 'Two_image' %}
+            <div class="container{% if block.settings.fullwidth_two %}-fluid{% endif %} ">
+                <div class="row center-rel ">
+                  <div class="{% if block.settings.divratio == '5050' %}col-md-6{% elsif block.settings.divratio == '6040'%}col-md-8{% else %}col-md-4{% endif %} rel" style="background-color:{{ block.settings.bgcol1 }}" >
+                      {% if block.settings.image21  %} 
+                        <a href="{{ block.settings.imageurl21 }}">
+                          <img src="{{ block.settings.image21 | img_url: 'master' }}"  border="0" class="objectfill"/>
+                        </a>
+                      {% endif %}
+                      {% if block.settings.showbottomtxt1 %}
+                          <div class="hdrti">{{ block.settings.hdrti1 }}</div>
+                          <div class="detti">{{ block.settings.detti1 }}</div>                               
+                          <div class="btnti">{{ block.settings.btnti1 }} READ MORE...</div>      
+                      {% endif %}
+                      {% if block.settings.showbtnwithtxt1 %}
+                          <div class="txtnbtn">
+                            <div class="hdrtxtnbtn">{{ block.settings.btnhdr1 }}</div>
+                            <div class="dettxtnbtn">{{ block.settings.btnsubhdr1 }}</div>                               
+                            <div class="btntxtnbtn">{{ block.settings.btntxt1 }} ›</div>
+                          </div>
+                      {% endif %}
+                  </div>
+                  <div class="{% if block.settings.divratio == '5050' %}col-md-6{% elsif block.settings.divratio == '6040'%}col-md-4{% else %}col-md-8{% endif %} rel" style="background-color:{{ block.settings.bgcol2 }}" >
+                      {% if block.settings.image22  %} 
+                        <a href="{{ block.settings.imageurl22 }}">
+                          <img src="{{ block.settings.image22 | img_url: 'master' }}"  border="0" class="objectfill"/>
+                        </a>
+                      {% endif %}
+                      {% if block.settings.showbottomtxt2 %}
+                        <div class="hdrti">{{ block.settings.hdrti2 }}</div>
+                        <div class="detti">{{ block.settings.detti2 }}</div>                               
+                        <div class="btnti">{{ block.settings.btnti2 }} READ MORE...</div>   
+                      {% endif %}
+                      {% if block.settings.showbtnwithtxt2 %}
+                          <div class="txtnbtn">
+                            <div class="hdrtxtnbtn">{{ block.settings.btnhdr2 }}</div>                            
+                            <div class="dettxtnbtn">{{ block.settings.btnsubhdr2 }}</div>                               
+                            <div class="btntxtnbtn">{{ block.settings.btntxt2 }} ›</div>
+                          </div>
+                      {% endif %}      
+                  </div>
+                </div>
+            </div>
+        {% when 'collectiontab' %}
+            <div class="container" >
+            <div style="background-color:#D9F0F9;">
+              <div class="tab">
+                <button class="{% if block.settings.showcoltab3 %}tabsize2 {% else %}tabsize{% endif %} tab-link" onclick="showImages('tab1')">{{ block.settings.tabhdr1 }}</button>
+                {% if block.settings.showcoltab2 %}
+                  <button class="{% if block.settings.showcoltab3 %}tabsize2 {% else %}tabsize {% endif %} tab-link" onclick="showImages('tab2')">{{ block.settings.tabhdr2 }}</button>
+                {% endif %}
+                {% if block.settings.showcoltab3 %}
+                  <button class="{% if block.settings.showcoltab3 %}tabsize2 {% else %}tabsize {% endif %} tab-link" onclick="showImages('tab3')">{{ block.settings.tabhdr3 }}</button>
+                {% endif %}
+              </div>
+<!--          TAB 1 -->
+              <div id="tab1" class="tab-content active">
+                <div>
+                <a href="{{ block.settings.colurl1 }}">
+                  <img src="{{ block.settings.colimg1 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt1 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl2 }}">
+                  <img src="{{ block.settings.colimg2 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt2 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl3 }}">
+                  <img src="{{ block.settings.colimg3 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt3 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl4 }}">
+                  <img src="{{ block.settings.colimg4 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt4 }} ›</div>
+                </a>
+                </div>      
+              </div>
+              
+<!--          TAB 2 -->
+              <div id="tab2" class="tab-content">
+                <div>
+                <a href="{{ block.settings.colurl5 }}">
+                  <img src="{{ block.settings.colimg5 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt5 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl6 }}">
+                  <img src="{{ block.settings.colimg6 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt6 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl7 }}">
+                  <img src="{{ block.settings.colimg7 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt7 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl8 }}">
+                  <img src="{{ block.settings.colimg8 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt8 }} ›</div>
+                </a>
+                </div>      
+              </div>
+<!--          TAB 3 -->
+              <div id="tab3" class="tab-content">
+                <div>
+                <a href="{{ block.settings.colurl9 }}">
+                  <img src="{{ block.settings.colimg9 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt9 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl10 }}">
+                  <img src="{{ block.settings.colimg10 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt10 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl11 }}">
+                  <img src="{{ block.settings.colimg11 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt11 }} ›</div>
+                </a>
+                </div>
+                <div>
+                <a href="{{ block.settings.colurl12 }}">
+                  <img src="{{ block.settings.colimg12 | img_url: 'master' }}">                  
+                  <div class="center">{{ block.settings.coltxt12 }} ›</div>
+                </a>
+                </div>      
+              </div>
+            </div>
+            </div>
+        {% endcase %} 
+{% endfor %}    
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">      
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="640" height="390" src="https://www.youtube.com/embed/NFWSFbqL0A0" id="videoPlayer"  allow="autoplay; encrypted-media" autoplay></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+              
+<style>
+  .bgcolorOne {
+    height: 420px;
+    position:relative;
+
+  }
+  .container,.container-fluid {
+    margin-bottom:20px;
+    position:relative;
+    
+  }
+  .center-rel { 
+    text-align:center; position:relative;display: flex;
+    justify-content: center;flex-direction: row;
+    gap:20px;
+  }
+  .hdrcaption {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .hdrcaptioncntr {
+    color: #fff;
+    position: absolute;
+    transform: translateY(-115%);
+    width: 100%;
+  }
+  .hdrcaptionlft {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-90%);
+    width: 100%;
+  }
+  .hdrcaptionrght {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+/*     transform: translateY(-180%); */
+    width: 100%;
+/*     left: 50%; */
+  }
+  .hdrcaptionlftOnly {
+    color: #fff;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-140%);
+    width: 100%;
+    padding: 20px
+  }
+  .hdrcaptionpos {
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    box-sizing: content-box;
+    position:relative;
+  }
+  .hdrcaptioncenter {
+    position:relative;   
+    display:flex;
+    flex-direction:column;    
+    text-align: center;
+  }
+  .hdrcaptionleft {
+    position:relative;   
+    display:flex;
+    flex-direction:column;    
+    text-align: left;
+    padding:30px;
+  }
+  .hdrcaptionright {
+    position:relative;   
+    display:flex;
+    flex-direction:column;    
+    text-align: left;
+    padding:30px;
+  }
+  .hdrcaptionleftonly {
+    position:relative;   
+    display:flex;
+    flex-direction:column;    
+    text-align: left;
+    padding:30px;
+  }
+  .txtnbtn {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
+    text-align:left;
+    padding:30px;
+  }
+  .hdr {
+    font-size: 3em;
+    font-weight: bold;
+    max-width: 480px;
+    line-height: 40px;
+  }
+  .det {
+    font-size:14px;
+    max-width: 450px;
+    margin-top:20px;
+
+  }
+  .detcntrbox {
+    text-align: -webkit-center;
+  }
+  .detcntr {
+    font-size:20px;
+    max-width: 700px;
+  }
+  .detathor {
+    font-weight:bold;
+  }
+  .detdesig {
+    font-style:italic;
+  }
+  .hdrleft {
+    font-size:48px;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+  .detleft {
+    font-size:26px;
+    text-transform: uppercase;
+    font-weight:bold;
+    line-height: 10px;
+  }
+  .btnleft {
+    background-color:#004B75;
+    text-align: center;
+    padding: 10px;
+    max-width: 250px;
+  }
+  .btnvideo {
+    position: absolute;
+    top: -30%;
+    left: 48%;
+    opacity: .9;
+  }
+  .hdrti {
+    font-weight:bold;
+    color:black;
+    text-transform:uppercase;
+  }
+  .detti {
+    color:black;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .btnti {
+    color:#004B75;
+    font-weight:500;
+  }
+  .hdrtxtnbtn {
+    color:#004B75;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    line-height: 50px;
+    max-width: 300px;
+  }
+  .dettxtnbtn {
+    color:#555555;
+    font-size:16px;
+    margin: 10px 0;
+    max-width:500px;
+  } 
+  .btntxtnbtn {
+    background-color: #004B75;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    color:white;    
+  }
+  .hdrright{
+    color:white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    line-height: 50px;
+    max-width: 300px;
+  }
+  .detright {
+    color:white;
+    font-size:16px;
+    margin: 10px;
+    max-width: 500px;
+  } 
+   .btnleftonly {
+    background-color: #004B75;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    color:white;    
+  }
+  .hdrleftonly{
+    color:white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    line-height: 50px;
+    max-width: 500px;
+    text-align:left;
+  }
+  .detleftonly {
+    color:white;
+    font-size:16px;
+    margin: 10px;
+    max-width: 500px;
+    text-align:left;
+  }  
+  .objectfill { 
+    object-fit: fill;
+    width:100%;
+  }
+  .center {
+    text-align:center;
+  }
+  .col-md-6 {
+    width:50%;
+  }
+  .col-md-8 {
+    width:60%;
+  }
+  .col-md-4 {
+    width:40%;
+  }
+  .tabsize {
+    width:300px;
+  }
+  .tabsize2 {
+    width:200px;
+  }
+  .tab-link.active {
+    background-color: #f0f0f0;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    color: #004B75;
+    font-size: 16px;
+    margin-bottom:40px;
+    padding-bottom:30px;
+  }
+  .tab {
+    text-align:center;
+    padding:15px;
+  }
+
+/* Styles for the modal */
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -o-transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: " ";
+}
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+    .modal-dialog-centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      min-height: calc(100% - 60px);
+      width: 600px;
+      margin: 30px auto;
+    }
+
+</style>
+
+
+  
+{% schema %}
+  {
+    "name": "Custom Page - Bong",
+    "class": "page-section-spacing",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Video_banner",
+        "name" : "Video Banner",
+        "settings" : [
+          {
+            "id": "video",
+            "type": "textarea",
+            "label": "Video link"
+          },
+          {
+            "id": "fullwidth_video",
+            "type": "checkbox",
+            "label": "Full page width",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type":"One_image",
+        "name": "One Image",
+        "settings": [
+          {
+            "id":"oneimgbanner",
+            "type":"image_picker",
+            "label": "select image"           
+          },
+          {
+            "type": "url",
+            "id": "imageurlOne",
+            "label": "Link"                        
+          },
+          {
+            "id": "onebtntext",
+            "type": "text",
+            "label": "button text"
+          },
+          {
+            "id": "showhdrtxt",
+            "type": "checkbox",
+            "label": "Show Header Text",
+            "default": false
+          },
+          {
+            "id":"onehdr",
+            "type": "text",
+            "label": "Header text"
+          },
+          {
+            "id":"onesubhdr",
+            "type": "textarea",
+            "label": "SubHeader text"
+          },
+          {
+            "id": "showcntrtxt",
+            "type": "checkbox",
+            "label": "Show Center Text",
+            "default": false
+          },          
+          {
+            "id":"onecntr",
+            "type": "textarea",
+            "label": "Center text"
+          },
+          {
+            "id":"onecntrauthor",
+            "type": "text",
+            "label": "Author"
+          },
+          {
+            "id":"onecntrdesig",
+            "type": "text",
+            "label": "Designation"
+          },          
+          {
+            "id": "showlefttxt",
+            "type": "checkbox",
+            "label": "Show Left Text",
+            "default": false
+          },
+          {
+            "id":"hdrlefttxt",
+            "type": "text",
+            "label": "Left Header Text"
+          },
+          {
+            "id":"detlefttxt",
+            "type": "text",
+            "label": "Left Detail Text"
+          },  
+          {
+            "id":"btnlefttxt",
+            "type": "text",
+            "label": "Button Left Text"
+          },
+          {
+            "id": "showrighttxt",
+            "type": "checkbox",
+            "label": "Show Right Text",
+            "default": false
+          },
+          {
+            "id":"translateypos",
+            "type": "text",
+            "label": "TranslateY Position"
+          }, 
+          {
+            "id":"leftpos",
+            "type": "text",
+            "label": "Left Position"
+          },     
+          {
+            "id":"hdrrighttxt",
+            "type": "text",
+            "label": "Left Right Text"
+          },
+          {
+            "id":"detrighttxt",
+            "type": "text",
+            "label": "Right Detail Text"
+          }, 
+          {
+            "id": "showrghtbtn",
+            "type": "checkbox",
+            "label": "Show Button",
+            "default": false
+          },             
+          {
+            "id":"btnrighttxt",
+            "type": "text",
+            "label": "Button Right Text"
+          },
+          {
+            "id": "showlfttxt",
+            "type": "checkbox",
+            "label": "Show Left Text Only",
+            "default": false
+          },          
+          {
+            "id":"lfttxt",
+            "type": "text",
+            "label": "Left Header Text"
+          },
+          {
+            "id":"detlfttxt",
+            "type": "text",
+            "label": "Left Detail Text"
+          },
+          {
+            "id": "hasbtnleftonly",
+            "type": "checkbox",
+            "label": "Show left button",
+            "default": false
+          },
+          {
+            "id":"btnlfttxt",
+            "type": "text",
+            "label": "Left Button Text"
+          },
+          {
+            "id": "fullwidth_One",
+            "type": "checkbox",
+            "label": "Full page width",
+            "default": true
+          },
+          {
+            "id": "colorbgone",
+            "type":"color",
+            "label": "Background Color",
+            "default": "#FFFFFF"
+          }
+        ]
+      },
+      {
+        "type": "Two_image",
+        "name": "2 column image",
+        "settings": [
+
+          {
+            "id": "image21",
+            "type": "image_picker",
+            "label": "image with border 600x750, without 1100x924"
+          },
+          {
+            "id": "showbottomtxt1",
+            "type": "checkbox",
+            "label": "Show Bottom Text1",
+            "default": false
+          },
+          {
+            "id":"hdrti1",
+            "type": "text",
+            "label": "Header text"
+          },
+          {
+            "id": "detti1",
+            "type":"text",
+            "label" : "Description 1"
+          },
+          {
+            "id": "btnlink1",
+            "type":"text",
+            "label" : "Link 1"
+          },
+          {
+            "id": "bgcol1",
+            "type":"color",
+            "label": "Background Color1",
+            "default": "#FFFFFF"
+          },          
+          {
+            "id": "image22",
+            "type": "image_picker",
+            "label": "image with border 600x750, without 1100x924"
+          },
+          {
+            "id": "showbottomtxt2",
+            "type": "checkbox",
+            "label": "Show Bottom Text2",
+            "default": false
+          },
+          {
+            "id":"hdrti2",
+            "type": "text",
+            "label": "Header2 text"
+          },
+          {
+            "id": "detti2",
+            "type":"text",
+            "label" : "Description 2"
+          },  
+          {
+            "id": "btnlink2",
+            "type":"text",
+            "label" : "Link 2"
+          },
+          {
+            "id": "bgcol2",
+            "type":"color",
+            "label": "Background Color2",
+            "default": "#FFFFFF"
+          },          
+          {
+            "id": "fullwidth_two",
+            "type": "checkbox",
+            "label": "Full page width",
+            "default": true
+          },
+          {
+            "type": "radio",
+            "id": "divratio",
+            "label": "div ratio",
+            "options": [
+              {
+                "value": "5050",
+                "label": "50/50"
+              },
+              {
+                "value": "6040",
+                "label": "60/40"
+              },
+              {
+                "value": "4060",
+                "label": "40/60"
+              }
+            ],
+            "default": "5050"
+          },
+          {
+            "id": "showbtnwithtxt1",
+            "type": "checkbox",
+            "label": "Show Text and Button1",
+            "default": false
+          },
+          {
+            "id": "btnhdr1",
+            "type": "text",
+            "label": "Header"
+          },
+          {
+            "id": "btnsubhdr1",
+            "type": "text",
+            "label": "Sub Header"
+          },
+          {
+            "id": "btntxt1",
+            "type": "text",
+            "label": "Button Text"
+          },
+          {
+            "id": "showbtnwithtxt2",
+            "type": "checkbox",
+            "label": "Show Text and Button2",
+            "default": false
+          },          
+          {
+            "id": "btnhdr2",
+            "type": "text",
+            "label": "Header"
+          },
+          {
+            "id": "btnsubhdr2",
+            "type": "text",
+            "label": "Sub Header"
+          },
+          {
+            "id": "btntxt2",
+            "type": "text",
+            "label": "Button Text"
+          }
+        ]        
+      },       
+      {
+        "type": "collectiontab",
+        "name": "Collection Tab",
+        "settings": [
+          {
+            "id": "tabhdr1",
+            "type": "text",
+            "label": "Tab 1"
+          },
+          {
+            "id": "showcoltab2",
+            "type": "checkbox",
+            "label": "Show tab2",
+            "default": false
+          },
+          {
+            "id": "tabhdr2",
+            "type": "text",
+            "label": "Tab 2"
+          },
+          {
+            "id": "showcoltab3",
+            "type": "checkbox",
+            "label": "Show tab3",
+            "default": false
+          },
+          {
+            "id": "tabhdr3",
+            "type": "text",
+            "label": "Tab 3"
+          },
+
+          {
+            "id":"colimg1",
+            "type":"image_picker",
+            "label": "select image1"           
+          },
+          {
+            "type": "url",
+            "id": "colurl1",
+            "label": "Link1"                        
+          },
+          {
+            "id": "coltxt1",
+            "type": "text",
+            "label": "Sub Text1"
+          },          
+          {
+            "id":"colimg2",
+            "type":"image_picker",
+            "label": "select image2"           
+          },
+          {
+            "type": "url",
+            "id": "colurl2",
+            "label": "Link2"                        
+          },
+          {
+            "id": "coltxt2",
+            "type": "text",
+            "label": "Sub Text2"
+          },
+          {
+            "id":"colimg3",
+            "type":"image_picker",
+            "label": "select image3"           
+          },
+          {
+            "type": "url",
+            "id": "colurl3",
+            "label": "Link3"                        
+          },
+          {
+            "id": "coltxt3",
+            "type": "text",
+            "label": "Sub Text3"
+          },
+          {
+            "id":"colimg4",
+            "type":"image_picker",
+            "label": "select image4"           
+          },
+          {
+            "type": "url",
+            "id": "colurl4",
+            "label": "Link4"                        
+          },
+          {
+            "id": "coltxt4",
+            "type": "text",
+            "label": "Sub Text4"
+          },
+          {
+            "id":"colimg5",
+            "type":"image_picker",
+            "label": "select image5"           
+          },
+          {
+            "type": "url",
+            "id": "colurl5",
+            "label": "Link5"                        
+          },
+          {
+            "id": "coltxt5",
+            "type": "text",
+            "label": "Sub Text5"
+          },
+          {
+            "id":"colimg6",
+            "type":"image_picker",
+            "label": "select image6"           
+          },
+          {
+            "type": "url",
+            "id": "colurl6",
+            "label": "Link6"                        
+          },
+          {
+            "id": "coltxt6",
+            "type": "text",
+            "label": "Sub Text6"
+          },
+          {
+            "id":"colimg7",
+            "type":"image_picker",
+            "label": "select image7"           
+          },
+          {
+            "type": "url",
+            "id": "colurl7",
+            "label": "Link7"                        
+          },
+          {
+            "id": "coltxt7",
+            "type": "text",
+            "label": "Sub Text7"
+          },
+          {
+            "id":"colimg8",
+            "type":"image_picker",
+            "label": "select image8"           
+          },
+          {
+            "type": "url",
+            "id": "colurl8",
+            "label": "Link8"                        
+          },
+          {
+            "id": "coltxt8",
+            "type": "text",
+            "label": "Sub Text8"
+          },
+          {
+            "id":"colimg9",
+            "type":"image_picker",
+            "label": "select image9"           
+          },
+          {
+            "type": "url",
+            "id": "colurl9",
+            "label": "Link9"                        
+          },
+          {
+            "id": "coltxt9",
+            "type": "text",
+            "label": "Sub Text9"
+          },
+          {
+            "id":"colimg10",
+            "type":"image_picker",
+            "label": "select image10"           
+          },
+          {
+            "type": "url",
+            "id": "colurl10",
+            "label": "Link10"                        
+          },
+          {
+            "id": "coltxt10",
+            "type": "text",
+            "label": "Sub Text10"
+          },
+          {
+            "id":"colimg11",
+            "type":"image_picker",
+            "label": "select image11"           
+          },
+          {
+            "type": "url",
+            "id": "colurl11",
+            "label": "Link11"                        
+          },
+          {
+            "id": "coltxt11",
+            "type": "text",
+            "label": "Sub Text11"
+          },
+          {
+            "id":"colimg12",
+            "type":"image_picker",
+            "label": "select image12"           
+          },
+          {
+            "type": "url",
+            "id": "colurl12",
+            "label": "Link12"                        
+          },
+          {
+            "id": "coltxt12",
+            "type": "text",
+            "label": "Sub Text12"
+          }
+        ]
+      }
+    ],
+    
+    "presets": [
+      {
+      "name": "Custom Page - Bong",
+      "category": "Home"
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+function showImages(tabId) {
+  var tabLinks = document.getElementsByClassName("tab-link");
+  var tabContents = document.getElementsByClassName("tab-content");
+
+  // Remove active class from all tab links and tab contents
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].classList.remove("active");
+    tabContents[i].classList.remove("active");
+  }
+
+  // Set the selected tab link and tab content as active
+  var selectedTabLink = document.getElementById(tabId);
+  var selectedTabContent = document.getElementById(tabId + "-content");
+  selectedTabLink.classList.add("active");
+  selectedTabContent.classList.add("active");
+}
+
+
+
+</script>
+

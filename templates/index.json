@@ -1,0 +1,651 @@
+{
+  "sections": {
+    "16359276425da8ce46": {
+      "type": "slideshow",
+      "blocks": {
+        "16359276425da8ce46-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/bannerMob.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 800,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "21099082-9e75-4de0-bcce-3b52a155ee10": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bannerA.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/bannerMobA.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 800,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16359276425da8ce46-0",
+        "21099082-9e75-4de0-bcce-3b52a155ee10"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "slide_transition": "zoom",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection-slider-row {background-color: #d9f0f9; margin-top: 30px; padding-top: 20px;}",
+        ".product-block__image {border: 1px solid #6d717526;}",
+        ".product-price__amount {font-weight: bold;}",
+        "span {font-weight: bold;}",
+        ".rimage-wrapper {}"
+      ],
+      "settings": {
+        "title": "Featured Product",
+        "collection": "frontpage",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
+    "52d7ed89-14aa-4485-bea4-02abd7fb8021": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "span {font-weight: bold;}",
+        ".hometitle {margin-top: 30px; padding-top: 20px; padding-bottom: 20px; background-color: #d9f0f9; margin-bottom: unset;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner2.jpg",
+        "height": "adapt",
+        "height_desktop": 700,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "NEW ARRIVALS",
+        "heading_max_width": 720,
+        "title_size": 20,
+        "title_size_mobile": 20,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "16359279164ff7d3f3": {
+      "type": "gallery",
+      "blocks": {
+        "16359279164ff7d3f3-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mens.jpg",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "MENS",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "16359279164ff7d3f3-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Womens.jpg",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "WOMENS",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "16359279164ff7d3f3-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kids.jpg",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "YOUTH",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "474c4491-283d-4680-a37b-7b5a444e7e62": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Footwear.jpg",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "FOOTWEAR",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "16359279164ff7d3f3-0",
+        "16359279164ff7d3f3-1",
+        "16359279164ff7d3f3-2",
+        "474c4491-283d-4680-a37b-7b5a444e7e62"
+      ],
+      "custom_css": [
+        ".rimage-background {background-size: auto;}",
+        ".overlay-text__title {font-size: 20px; text-align: center; font-weight: bold; color: #004b75; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;}",
+        ".image-overlay--bg-full:after {background: unset;}",
+        ".fully-spaced-row--medium {margin-top: 0px; margin-bottom: 10px;}",
+        "span {font-weight: bold;}",
+        ".hometitle {margin-top: 30px; padding-top: 20px; padding-bottom: 20px; background-color: #f5f5f5; margin-bottom: unset;}"
+      ],
+      "settings": {
+        "grid": 4,
+        "height": "adapt",
+        "desktop_image_height": 280,
+        "mobile_image_height": 100,
+        "title_size": 56,
+        "title_size_mobile": 48,
+        "title": "SHOP OUR LATEST",
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "shadow",
+        "button_style": "primary"
+      }
+    },
+    "957c36d1-5dd5-4dac-94b9-36616c821343": {
+      "type": "gallery",
+      "blocks": {
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app-ico-visual-hiking.png",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "HIKING >",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_trail-running_80x80a.png",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "TRAIL RUNNING >",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app-ico-visual-casual.png",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "TRAVEL >",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon_equipment_80x80a.png",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "EQUIPMENT >",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-0",
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-1",
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-2",
+        "template--19193142935826__957c36d1-5dd5-4dac-94b9-36616c821343-1685935019e6510436-3"
+      ],
+      "custom_css": [
+        ".rimage-background {background-size: auto;}",
+        ".overlay-text__title {font-size: 15px; text-align: center; color: #004b75;}",
+        ".image-overlay--bg-full:after {background: unset;}",
+        ".fully-spaced-row--medium {background-color: #d9f0f9; margin-top: 0px;}",
+        ".slick-dots li button.custom-dot circle {fill: #004b75; stroke: white;}"
+      ],
+      "settings": {
+        "grid": 4,
+        "height": "fixed",
+        "desktop_image_height": 150,
+        "mobile_image_height": 200,
+        "title_size": 30,
+        "title_size_mobile": 62,
+        "title": "",
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "3df8a785-790f-4894-ace5-e2abd1af40ad": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/app-ico-visual-hiking.png",
+            "image_width": 60,
+            "title": "",
+            "text": "<p>HIKING &gt;<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon_trail-running_80x80_ede29487-8616-4a7a-adfb-0bbf333628df.png",
+            "image_width": 60,
+            "title": "",
+            "text": "<p>TRAIL RUNNING &gt;<\/p><p><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/app-ico-visual-casual.png",
+            "image_width": 60,
+            "title": "",
+            "text": "<p>TRAVEL &gt;<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "d0beada2-c4c6-45d5-840f-4ff8c4b4cdb5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon_equipment_80x80_60a3e16c-0f2c-404d-994c-6a10c831490c.png",
+            "image_width": 60,
+            "title": "",
+            "text": "<p>EQUIPMENT &gt;<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-0",
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-1",
+        "template--19193142935826__3df8a785-790f-4894-ace5-e2abd1af40ad-1685933569811c598d-2",
+        "d0beada2-c4c6-45d5-840f-4ff8c4b4cdb5"
+      ],
+      "custom_css": [
+        ".flexible-layout--variable-columns.flexible-layout--columns-4 .column {width: 25%;}"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "163592857728b8bdc2": {
+      "type": "multi-column",
+      "blocks": {
+        "163592857728b8bdc2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/whatsnew1.jpg",
+            "image_width": 700,
+            "title": "6 TYPES OF OUTDOOR COATS TO KNOW",
+            "text": "<p>Can’t tell you <a href=\"https:\/\/www.columbia.com\/one-jacket-vacation.html\">what kind of jacket<\/a> you need?<\/p>",
+            "button_label": "LEARN MORE...",
+            "link": ""
+          }
+        },
+        "163592857728b8bdc2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/whatsnew2.jpg",
+            "image_width": 700,
+            "title": "HOW TO STAY DRY: TYPES OF WATERPROOFING",
+            "text": "<p>Find out what separates water-repellent, water-resistant, and waterproof gear.<\/p>",
+            "button_label": "LEARN MORE...",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163592857728b8bdc2-0",
+        "163592857728b8bdc2-1"
+      ],
+      "custom_css": [
+        ".text-column__title {color: #6d7175;}",
+        ".hometitle {font-weight: bold;}"
+      ],
+      "settings": {
+        "title": "WHATS NEW",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "1635927863703110df": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "1635927863703110df-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "1635927863703110df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "1635927863703110df-1",
+        "1635927863703110df-2"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "16359278867b92de38": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image_width": 700,
+        "subheading": "Subheading",
+        "title": "Image with text",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "Optional button",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "16359281184fd0d618": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "16359281184fd0d618-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "author": "Author's name",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "16359281184fd0d618-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "author": "Author's name",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16359281184fd0d618-0",
+        "16359281184fd0d618-1"
+      ],
+      "settings": {
+        "title": "From the people",
+        "layout": "image-right",
+        "text_caps": false,
+        "quote_text_size": 30,
+        "quote_text_size_mobile": 20,
+        "image_shape": "square",
+        "use_alt_bg": false,
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "16359285201c71bbb1": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "subheading": "Tell your story",
+        "title": "Background video",
+        "heading_max_width": 800,
+        "title_size": 84,
+        "title_size_mobile": 42,
+        "use_h1": false,
+        "text": "<p>Use a video to get a customer's attention<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "height_desktop": 580,
+        "height_mobile": 480,
+        "full_width": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "1635928580d75f81bf": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "1635928580d75f81bf-0": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "1635928580d75f81bf-1": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "1635928580d75f81bf-2": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "1635928580d75f81bf-3": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "1635928580d75f81bf-4": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "1635928580d75f81bf-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true
+          }
+        },
+        "1635928580d75f81bf-6": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "1635928580d75f81bf-0",
+        "1635928580d75f81bf-1",
+        "1635928580d75f81bf-2",
+        "1635928580d75f81bf-3",
+        "1635928580d75f81bf-4",
+        "1635928580d75f81bf-5",
+        "1635928580d75f81bf-6"
+      ],
+      "settings": {
+        "product": "",
+        "inventory_transfers_enable": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "enable_var_img_grouping": false,
+        "var_img_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "1635928697c562053a": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "color_bg": "#f4f4f4",
+        "full_width": true,
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "button": "Directions",
+        "show_pin": true,
+        "show_feature_image": true,
+        "map_address": "80 Spadina Ave, Toronto",
+        "api_key": "",
+        "map_style": "silver"
+      }
+    },
+    "163592870141219e2f": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "blog": "",
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78"
+      }
+    },
+    "ae37f4f8-02fc-4d77-8bfa-3fbf85a97fd7": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "211229d9-97fd-4e24-9717-839a8e94caf2": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "211229d9-97fd-4e24-9717-839a8e94caf2"
+      ],
+      "settings": {
+        "title": "Logo list",
+        "image_opacity": 75,
+        "use_alt_bg": true
+      }
+    }
+  },
+  "order": [
+    "16359276425da8ce46",
+    "16359278676808bea5",
+    "52d7ed89-14aa-4485-bea4-02abd7fb8021",
+    "16359279164ff7d3f3",
+    "957c36d1-5dd5-4dac-94b9-36616c821343",
+    "3df8a785-790f-4894-ace5-e2abd1af40ad",
+    "163592857728b8bdc2",
+    "1635927863703110df",
+    "16359278867b92de38",
+    "16359281184fd0d618",
+    "16359285201c71bbb1",
+    "1635928580d75f81bf",
+    "1635928697c562053a",
+    "163592870141219e2f",
+    "ae37f4f8-02fc-4d77-8bfa-3fbf85a97fd7"
+  ]
+}

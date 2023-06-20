@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-pageCustom",
+      "blocks": {
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/kv-hiking-top-d.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "POSITIVE CHANGE IS OUR POLICY.",
+            "onesubhdr": "Columbia is proud to support initiatives that focus on doing right by the people we reach, the places we touch, and the products we make.",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "",
+            "detlefttxt": "",
+            "btnlefttxt": "",
+            "showrighttxt": false,
+            "translateypos": "",
+            "leftpos": "",
+            "hdrrighttxt": "",
+            "detrighttxt": "",
+            "showrghtbtn": false,
+            "btnrighttxt": "",
+            "showlfttxt": true,
+            "lfttxt": "WANDER WILD.",
+            "detlfttxt": "Trail-ready styles that weather the elements.",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "123",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        },
+        "ca2e0946-1b54-4442-83bc-fe190994a5e9": {
+          "type": "collectiontab",
+          "settings": {
+            "tabhdr1": "MEN",
+            "showcoltab2": true,
+            "tabhdr2": "WOMEN",
+            "showcoltab3": false,
+            "tabhdr3": "KIDS",
+            "colimg1": "shopify:\/\/shop_images\/m1.jpg",
+            "colurl1": "",
+            "coltxt1": "Shop Jackets",
+            "colimg2": "shopify:\/\/shop_images\/m2.jpg",
+            "colurl2": "",
+            "coltxt2": "Shop Shirts",
+            "colimg3": "shopify:\/\/shop_images\/m3.jpg",
+            "colurl3": "",
+            "coltxt3": "Shop Pants",
+            "colimg4": "shopify:\/\/shop_images\/m4.jpg",
+            "colurl4": "",
+            "coltxt4": "Shop Footwear",
+            "colimg5": "shopify:\/\/shop_images\/w1.jpg",
+            "colurl5": "",
+            "coltxt5": "Shop Jackets",
+            "colimg6": "shopify:\/\/shop_images\/w2.jpg",
+            "colurl6": "",
+            "coltxt6": "Shop Tops",
+            "colimg7": "shopify:\/\/shop_images\/w3.jpg",
+            "colurl7": "",
+            "coltxt7": "Shop Bottoms",
+            "colimg8": "shopify:\/\/shop_images\/w4.jpg",
+            "colurl8": "",
+            "coltxt8": "Shop Footwear",
+            "colurl9": "",
+            "coltxt9": "",
+            "colurl10": "",
+            "coltxt10": "",
+            "colurl11": "",
+            "coltxt11": "",
+            "colurl12": "",
+            "coltxt12": ""
+          }
+        },
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8": {
+          "type": "Two_image",
+          "settings": {
+            "image21": "shopify:\/\/shop_images\/banner1_3240e6df-15c6-4417-9d4d-f29877017d9e.jpg",
+            "showbottomtxt1": false,
+            "hdrti1": "Sustaining Places",
+            "detti1": "As an outdoor company, we make every effort to respect and preserve natural resources. Our goal is to limit our impact on the communities we touch while sustaining the land we love.",
+            "btnlink1": "",
+            "bgcol1": "#ffffff",
+            "showbottomtxt2": false,
+            "hdrti2": "Empowering People",
+            "detti2": "We partner with organizations and communities around the world to help support and inspire people to take an active role in making healthy life choices for themselves and their families.",
+            "btnlink2": "",
+            "bgcol2": "#ffffff",
+            "fullwidth_two": false,
+            "divratio": "6040",
+            "showbtnwithtxt1": false,
+            "btnhdr1": "",
+            "btnsubhdr1": "",
+            "btntxt1": "",
+            "showbtnwithtxt2": true,
+            "btnhdr2": "CLASSIC COMFORT.",
+            "btnsubhdr2": "Built with your hiking needs in mind.",
+            "btntxt2": "SHOP CLASSIC COMFORT >"
+          }
+        },
+        "f74a2b20-d882-4a83-86a6-eb5ef8846654": {
+          "type": "Two_image",
+          "settings": {
+            "showbottomtxt1": false,
+            "hdrti1": "Innovating Products",
+            "detti1": "Through breakthrough product design and sustainable manufacturing practices, we’re creating new ways to reduce our impact on the environment.",
+            "btnlink1": "",
+            "bgcol1": "#ffffff",
+            "image22": "shopify:\/\/shop_images\/banner2_3565f3ba-8c17-4ed1-8060-f41ed736f1fa.jpg",
+            "showbottomtxt2": false,
+            "hdrti2": "Responsible Practices",
+            "detti2": "Knowing where our products come from, what they are made of, and how they are made helps ensure safe products and responsible conditions across our supply chain.",
+            "btnlink2": "",
+            "bgcol2": "#ffffff",
+            "fullwidth_two": false,
+            "divratio": "4060",
+            "showbtnwithtxt1": true,
+            "btnhdr1": "OUR BESTGEAR.",
+            "btnsubhdr1": "When conditions get tough, rely on our best",
+            "btntxt1": "SHOP TITANIUM >",
+            "showbtnwithtxt2": false,
+            "btnhdr2": "OUR BEST GEAR.",
+            "btnsubhdr2": "When conditions get tough, rely on our best.",
+            "btntxt2": "SHOP TITANIUM >"
+          }
+        },
+        "23bf03a7-89ad-41e5-8995-f6dfddb6384c": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner3.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "",
+            "onesubhdr": "",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "HERproject",
+            "detlefttxt": "Empowering People",
+            "btnlefttxt": "LEARN MORE",
+            "showrighttxt": true,
+            "translateypos": "-180",
+            "leftpos": "50",
+            "hdrrighttxt": "UP FOR A DOWNPOUR",
+            "detrighttxt": "OutDry™ Extreme is the ultimate waterproof breathable solution for extreme conditions. Membrane outside – dry inside.",
+            "showrghtbtn": false,
+            "btnrighttxt": "Shop OutDry™ Extreme ›",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1",
+        "ca2e0946-1b54-4442-83bc-fe190994a5e9",
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8",
+        "f74a2b20-d882-4a83-86a6-eb5ef8846654",
+        "23bf03a7-89ad-41e5-8995-f6dfddb6384c"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-pageCustom",
+      "blocks": {
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner_2357a7e3-f64f-456e-9129-e9dba82d5577.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "POSITIVE CHANGE IS OUR POLICY.",
+            "onesubhdr": "Columbia is proud to support initiatives that focus on doing right by the people we reach, the places we touch, and the products we make.",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "",
+            "detlefttxt": "",
+            "btnlefttxt": "",
+            "showrighttxt": false,
+            "translateypos": "-160",
+            "leftpos": "70",
+            "hdrrighttxt": "FISH BEWARE",
+            "detrighttxt": "It's the gear that all fish fear.",
+            "showrghtbtn": false,
+            "btnrighttxt": "",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        },
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8": {
+          "type": "Two_image",
+          "settings": {
+            "image21": "shopify:\/\/shop_images\/ban1.jpg",
+            "showbottomtxt1": false,
+            "hdrti1": "Sustaining Places",
+            "detti1": "As an outdoor company, we make every effort to respect and preserve natural resources. Our goal is to limit our impact on the communities we touch while sustaining the land we love.",
+            "btnlink1": "",
+            "bgcol1": "#ffffff",
+            "showbottomtxt2": false,
+            "hdrti2": "Empowering People",
+            "detti2": "We partner with organizations and communities around the world to help support and inspire people to take an active role in making healthy life choices for themselves and their families.",
+            "btnlink2": "",
+            "bgcol2": "#ffffff",
+            "fullwidth_two": false,
+            "divratio": "6040",
+            "showbtnwithtxt1": false,
+            "btnhdr1": "",
+            "btnsubhdr1": "",
+            "btntxt1": "",
+            "showbtnwithtxt2": true,
+            "btnhdr2": "Kick Up a Storm",
+            "btnsubhdr2": "Built to keep your feet dry and comfortable in volatile conditions, the latest version of our popular trail runner features waterproof construction, advanced midsole cushioning and support, and high-grip traction to keep you sure-footed on uneven terrain.",
+            "btntxt2": "Shop Caldorado™ III"
+          }
+        },
+        "1485817d-d5b6-480a-97b1-749b1700d176": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner2_d7275dbb-0f0d-4a83-abe0-cc6acc7b49e5.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": true,
+            "onehdr": "",
+            "onesubhdr": "",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "",
+            "detlefttxt": "",
+            "btnlefttxt": "",
+            "showrighttxt": true,
+            "translateypos": "-100",
+            "leftpos": "55",
+            "hdrrighttxt": "Outrun the Elements",
+            "detrighttxt": "The latest arrivals from Columbia Montrail feature a wide range of head-to-toe gear built for versatile performance in variable conditions.",
+            "showrghtbtn": true,
+            "btnrighttxt": "Shop New Arrivals",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        },
+        "c7d3e9da-5d06-45b0-8902-9d653d50f256": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner3_15ea656d-2590-4665-8641-720eb9c079d5.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "",
+            "onesubhdr": "",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "",
+            "detlefttxt": "",
+            "btnlefttxt": "",
+            "showrighttxt": false,
+            "translateypos": "",
+            "leftpos": "",
+            "hdrrighttxt": "",
+            "detrighttxt": "",
+            "showrghtbtn": false,
+            "btnrighttxt": "",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#FFFFFF"
+          }
+        },
+        "c2a0b9fe-899e-472b-b232-1e38128ecfa5": {
+          "type": "Two_image",
+          "settings": {
+            "image21": "shopify:\/\/shop_images\/ban2_d7790824-e20b-4a39-b82e-0301469e22e5.jpg",
+            "showbottomtxt1": false,
+            "hdrti1": "",
+            "detti1": "",
+            "btnlink1": "",
+            "bgcol1": "#FFFFFF",
+            "showbottomtxt2": false,
+            "hdrti2": "",
+            "detti2": "",
+            "btnlink2": "",
+            "bgcol2": "#FFFFFF",
+            "fullwidth_two": false,
+            "divratio": "6040",
+            "showbtnwithtxt1": false,
+            "btnhdr1": "",
+            "btnsubhdr1": "",
+            "btntxt1": "",
+            "showbtnwithtxt2": true,
+            "btnhdr2": "READY TO FLEX.",
+            "btnsubhdr2": "Looking for a smooth, comfortable ride whether you're running on pavement or trail? Our X.S.R. collection is built for performance on a range of surfaces with lightweight support, advanced midsole cushioning, and an outsole engineered for maximum traction on or off road.",
+            "btntxt2": "SHOP THE COLLECTION"
+          }
+        },
+        "91585399-967d-4ab4-bea3-2937f348acb2": {
+          "type": "Two_image",
+          "settings": {
+            "showbottomtxt1": false,
+            "hdrti1": "",
+            "detti1": "",
+            "btnlink1": "",
+            "bgcol1": "#FFFFFF",
+            "image22": "shopify:\/\/shop_images\/ban3_9d48f5da-b68f-498d-96db-f6f041b7a17c.jpg",
+            "showbottomtxt2": false,
+            "hdrti2": "",
+            "detti2": "",
+            "btnlink2": "",
+            "bgcol2": "#FFFFFF",
+            "fullwidth_two": false,
+            "divratio": "4060",
+            "showbtnwithtxt1": true,
+            "btnhdr1": "FOAM RISES TO THE TOP",
+            "btnsubhdr1": "The FluidFlex™ X.S.R.™ trail running shoe features FluidFoam™ midsole technology engineered to deliver exceptional cushion from road to trail.",
+            "btntxt1": "Shop the FluidFlex™ X.S.R.™",
+            "showbtnwithtxt2": false,
+            "btnhdr2": "",
+            "btnsubhdr2": "",
+            "btntxt2": ""
+          }
+        }
+      },
+      "block_order": [
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1",
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8",
+        "1485817d-d5b6-480a-97b1-749b1700d176",
+        "c7d3e9da-5d06-45b0-8902-9d653d50f256",
+        "c2a0b9fe-899e-472b-b232-1e38128ecfa5",
+        "91585399-967d-4ab4-bea3-2937f348acb2"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

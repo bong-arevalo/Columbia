@@ -1,0 +1,193 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-pageCustom",
+      "blocks": {
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1": {
+          "type": "One_image",
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner1_d60aa4b4-167b-45ff-97c4-295cccd0b1b4.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "POSITIVE CHANGE IS OUR POLICY.",
+            "onesubhdr": "Columbia is proud to support initiatives that focus on doing right by the people we reach, the places we touch, and the products we make.",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "",
+            "detlefttxt": "",
+            "btnlefttxt": "",
+            "showrighttxt": true,
+            "translateypos": "-160",
+            "leftpos": "70",
+            "hdrrighttxt": "FISH BEWARE",
+            "detrighttxt": "It's the gear that all fish fear.",
+            "showrghtbtn": false,
+            "btnrighttxt": "",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        },
+        "ca2e0946-1b54-4442-83bc-fe190994a5e9": {
+          "type": "collectiontab",
+          "settings": {
+            "tabhdr1": "MEN",
+            "showcoltab2": true,
+            "tabhdr2": "WOMEN",
+            "showcoltab3": true,
+            "tabhdr3": "YOUTH",
+            "colimg1": "shopify:\/\/shop_images\/m1_3407baed-2082-4a58-9e30-972063ed20a5.jpg",
+            "colurl1": "",
+            "coltxt1": "Shop Jackets",
+            "colimg2": "shopify:\/\/shop_images\/m2_5c764097-ca4c-4aef-b9e1-e8ed3771d922.jpg",
+            "colurl2": "",
+            "coltxt2": "Shop Shirts",
+            "colimg3": "shopify:\/\/shop_images\/m3_9f3dad91-0f10-4357-9aff-458449da0df9.jpg",
+            "colurl3": "",
+            "coltxt3": "Shop Pants",
+            "colimg4": "shopify:\/\/shop_images\/m4_85b5aeae-48dc-4360-b347-bff17d4514aa.jpg",
+            "colurl4": "",
+            "coltxt4": "Shop Footwear",
+            "colimg5": "shopify:\/\/shop_images\/w1_183a29ec-b7a9-4560-bdb8-e62fbdb3cc09.jpg",
+            "colurl5": "",
+            "coltxt5": "Shop Jackets",
+            "colimg6": "shopify:\/\/shop_images\/w2_231dd2df-e827-4221-88f0-a509ade1c96e.jpg",
+            "colurl6": "",
+            "coltxt6": "Shop Tops",
+            "colimg7": "shopify:\/\/shop_images\/w3_b3d7d62a-25d4-43c2-8d39-9dd96b701d7b.jpg",
+            "colurl7": "",
+            "coltxt7": "Shop Bottoms",
+            "colimg8": "shopify:\/\/shop_images\/w4_c00163d3-df2d-47de-b835-e7b7a6eee2c5.jpg",
+            "colurl8": "",
+            "coltxt8": "Shop Footwear",
+            "colimg9": "shopify:\/\/shop_images\/y1.jpg",
+            "colurl9": "",
+            "coltxt9": "Shop Jackets",
+            "colimg10": "shopify:\/\/shop_images\/y2.jpg",
+            "colurl10": "",
+            "coltxt10": "Shop Shirts",
+            "colimg11": "shopify:\/\/shop_images\/y3.jpg",
+            "colurl11": "",
+            "coltxt11": "Shop Bottom",
+            "colimg12": "shopify:\/\/shop_images\/y4.jpg",
+            "colurl12": "",
+            "coltxt12": "Shop Accesories"
+          }
+        },
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8": {
+          "type": "Two_image",
+          "settings": {
+            "image21": "shopify:\/\/shop_images\/ban2.jpg",
+            "showbottomtxt1": false,
+            "hdrti1": "Sustaining Places",
+            "detti1": "As an outdoor company, we make every effort to respect and preserve natural resources. Our goal is to limit our impact on the communities we touch while sustaining the land we love.",
+            "btnlink1": "",
+            "bgcol1": "#ffffff",
+            "showbottomtxt2": false,
+            "hdrti2": "Empowering People",
+            "detti2": "We partner with organizations and communities around the world to help support and inspire people to take an active role in making healthy life choices for themselves and their families.",
+            "btnlink2": "",
+            "bgcol2": "#ffffff",
+            "fullwidth_two": false,
+            "divratio": "6040",
+            "showbtnwithtxt1": false,
+            "btnhdr1": "",
+            "btnsubhdr1": "",
+            "btntxt1": "",
+            "showbtnwithtxt2": true,
+            "btnhdr2": "Turn up the heat",
+            "btnsubhdr2": "A warm jacket that's water and stain repellant.",
+            "btntxt2": "SHOP OUTERWEAR"
+          }
+        },
+        "f74a2b20-d882-4a83-86a6-eb5ef8846654": {
+          "type": "Two_image",
+          "settings": {
+            "showbottomtxt1": false,
+            "hdrti1": "Innovating Products",
+            "detti1": "Through breakthrough product design and sustainable manufacturing practices, we’re creating new ways to reduce our impact on the environment.",
+            "btnlink1": "",
+            "bgcol1": "#ffffff",
+            "image22": "shopify:\/\/shop_images\/ban3.jpg",
+            "showbottomtxt2": false,
+            "hdrti2": "Responsible Practices",
+            "detti2": "Knowing where our products come from, what they are made of, and how they are made helps ensure safe products and responsible conditions across our supply chain.",
+            "btnlink2": "",
+            "bgcol2": "#ffffff",
+            "fullwidth_two": false,
+            "divratio": "4060",
+            "showbtnwithtxt1": true,
+            "btnhdr1": "FIND YOUR FIT.",
+            "btnsubhdr1": "More sizes, more adventures.",
+            "btntxt1": "SHOP EXTENDED SIZES",
+            "showbtnwithtxt2": false,
+            "btnhdr2": "",
+            "btnsubhdr2": "",
+            "btntxt2": ""
+          }
+        },
+        "23bf03a7-89ad-41e5-8995-f6dfddb6384c": {
+          "type": "One_image",
+          "disabled": true,
+          "settings": {
+            "oneimgbanner": "shopify:\/\/shop_images\/banner3.jpg",
+            "imageurlOne": "",
+            "onebtntext": "",
+            "showhdrtxt": false,
+            "onehdr": "",
+            "onesubhdr": "",
+            "showcntrtxt": false,
+            "onecntr": "",
+            "onecntrauthor": "",
+            "onecntrdesig": "",
+            "showlefttxt": false,
+            "hdrlefttxt": "HERproject",
+            "detlefttxt": "Empowering People",
+            "btnlefttxt": "LEARN MORE",
+            "showrighttxt": true,
+            "translateypos": "",
+            "leftpos": "",
+            "hdrrighttxt": "UP FOR A DOWNPOUR",
+            "detrighttxt": "OutDry™ Extreme is the ultimate waterproof breathable solution for extreme conditions. Membrane outside – dry inside.",
+            "showrghtbtn": false,
+            "btnrighttxt": "Shop OutDry™ Extreme ›",
+            "showlfttxt": false,
+            "lfttxt": "",
+            "detlfttxt": "",
+            "hasbtnleftonly": false,
+            "btnlfttxt": "",
+            "fullwidth_One": false,
+            "colorbgone": "#ffffff"
+          }
+        },
+        "d0b06535-2c2d-43ec-bb2d-fd906dd4e27c": {
+          "type": "multi-column",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "27da9afa-9b86-4bfe-ad9c-34ab8f1e32f1",
+        "ca2e0946-1b54-4442-83bc-fe190994a5e9",
+        "bbb4cbd9-efdb-415a-897c-41c9f14c3da8",
+        "f74a2b20-d882-4a83-86a6-eb5ef8846654",
+        "23bf03a7-89ad-41e5-8995-f6dfddb6384c",
+        "d0b06535-2c2d-43ec-bb2d-fd906dd4e27c"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
